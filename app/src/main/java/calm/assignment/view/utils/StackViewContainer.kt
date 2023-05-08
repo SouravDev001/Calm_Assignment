@@ -7,14 +7,14 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.FrameLayout
 import android.widget.LinearLayout
-import android.widget.ToggleButton
+import androidx.appcompat.widget.AppCompatImageView
 import androidx.appcompat.widget.AppCompatTextView
 import calm.assignment.R
 
 class StackViewContainer(context: Context, attrs: AttributeSet? = null) :
     FrameLayout(context, attrs) {
 
-    private val toggleButton: ToggleButton
+    private val toggleButton: AppCompatImageView
     private val textField: AppCompatTextView = AppCompatTextView(context)
     private val stackContainer: LinearLayout
     private var isExpanded = false
@@ -44,6 +44,7 @@ class StackViewContainer(context: Context, attrs: AttributeSet? = null) :
     fun collapse() {
         isExpanded = false
         toggleButton.isSelected = false
+        toggleButton.setImageResource(R.drawable.down_arrow)
         stackContainer.visibility = View.GONE
     }
 
@@ -64,8 +65,10 @@ class StackViewContainer(context: Context, attrs: AttributeSet? = null) :
 
         if (isExpanded) {
             stackContainer.visibility = View.VISIBLE
+            toggleButton.setImageResource(R.drawable.up_arrow)
         } else {
             stackContainer.visibility = View.GONE
+            toggleButton.setImageResource(R.drawable.down_arrow)
         }
     }
 }

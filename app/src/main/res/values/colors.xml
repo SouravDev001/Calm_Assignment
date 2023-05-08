@@ -7,7 +7,7 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-
+    <color name="sky_blue">#66c3f2</color>
     <color name="transparent">#00FFFFFF</color>
     <color name="transparent_bg80">#CC000000</color>
     <color name="transparent_bg90">#BF000000</color>
@@ -15,5 +15,7 @@
     <color name="whiteTransparent">#1AFFFFFF</color>
 
     <color name="card_button_bg">#EC5050</color>
+
+    <color name="peach">#FFF8E2</color>
 
 </resources>
