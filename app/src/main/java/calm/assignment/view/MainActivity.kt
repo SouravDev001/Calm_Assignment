@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
 
         // Add some sample child views to the stack view.
         val inflater = LayoutInflater.from(this)
-        for (i in 1..5) {
+        for (i in 1..4) {
             val view = inflater.inflate(R.layout.child_view, null)
 //            val textView = view.findViewById<TextView>(R.id.textView)
 //            textView.text = "Child View $i"
